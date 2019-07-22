@@ -1,0 +1,12 @@
+"use strict";
+var people = 38;
+var capacity = 15;
+var costPerVan = 250;
+var vans = Math.ceil(people / capacity);
+var totalCost = vans * costPerVan;
+var perPersonCost = totalCost / people;
+var perPersonActual = perPersonCost.toFixed(2);
+var totalMoneyCollected = perPersonActual * people;
+console.log("The cost per person is $" + perPersonActual);
+console.log("The cost for " + vans + " vans is $" + totalCost);
+console.log("The total money collected is $" + totalMoneyCollected.toFixed(2));
